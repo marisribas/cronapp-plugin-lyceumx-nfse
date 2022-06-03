@@ -13,7 +13,7 @@ import java.util.concurrent.Callable;
  */
 
 @CronapiMetaData(categoryName = "LyceumX")
-public class Lyceumx-NFse {
+public class LyceumxNFse {
 
 @CronapiMetaData(type = "function", name = "ObterToken", description = "ObterToken")
 public static Var ObterToken() throws Exception {
