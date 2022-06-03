@@ -1,0 +1,397 @@
+{
+  "customId": "pluginNFse",
+  "queryName": "pluginNFse",
+  "sourceType": "rest",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": null,
+  "entityFullName": null,
+  "endpoint": {
+    "url": "https://api.dev.lyceum.cloud/nfse/notas",
+    "GET": {
+      "parameters": {
+        "$url": null,
+        "$datapath": "\"results\"",
+        "size": "per_page",
+        "page": "expression:${page?number-1}",
+        "sort": "cronapi.server(\u0027blockly.LyceumXDs.orderx\u0027).names().run()",
+        "filter": "cronapi.server(\u0027blockly.LyceumXDs.filterx\u0027).names().run()"
+      }
+    },
+    "POST": {},
+    "PUT": {},
+    "DELETE": {},
+    "FILTER": {
+      "parameters": {
+        "$url": null,
+        "$datapath": "\"results\"",
+        "size": "per_page",
+        "page": "expression:${page?number-1}",
+        "filter": "cronapi.server(\u0027blockly.LyceumXDs.filterx\u0027).names().run()",
+        "sort": "cronapi.server(\u0027blockly.LyceumXDs.orderx\u0027).names().run()"
+      }
+    },
+    "COUNT": {
+      "parameters": {
+        "$url": null,
+        "$datapath": "\"totalElements\"",
+        "size": "per_page",
+        "page": "expression:${page?number-1}"
+      }
+    },
+    "metadata": null
+  },
+  "query": "",
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "alteradoPor": null,
+    "cadastradoPor": null,
+    "cidadePrestacaoCodigo": null,
+    "cidadePrestacaoDescricao": null,
+    "codigoNota": null,
+    "codigoVerificacao": null,
+    "competencia": null,
+    "dataAlteracao": null,
+    "dataAutorizacao": null,
+    "dataCadastro": null,
+    "dataEmissao": null,
+    "dataVencimento": null,
+    "descricao": null,
+    "emitidaProducao": null,
+    "enviarEmail": null,
+    "idIntegracao": null,
+    "lote": null,
+    "mensagem": null,
+    "numero": null,
+    "numeroNfse": null,
+    "prestadorCpfCnpj": null,
+    "prestadorRazaoSocial": null,
+    "serie": null,
+    "servicoCodigo": null,
+    "servicoDiscriminacao": null,
+    "servicoValorLiquido": null,
+    "servicoValorServico": null,
+    "status": null,
+    "statusCallback": null,
+    "tipoAutorizacao": null,
+    "tomadorCpfCnpj": null,
+    "tomadorEnderecoCodigoCidade": null,
+    "tomadorEnderecoDescricaoCidade": null,
+    "tomadorOrgaoPublico": null,
+    "tomadorRazaoSocial": null,
+    "uuid": null
+  },
+  "defaultValuesProperties": {
+    "alteradoPor": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "cadastradoPor": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "cidadePrestacaoCodigo": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "cidadePrestacaoDescricao": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "codigoNota": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "codigoVerificacao": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "competencia": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "dataAlteracao": {
+      "key": true,
+      "nullable": true,
+      "type": "DateTime"
+    },
+    "dataAutorizacao": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "dataCadastro": {
+      "key": true,
+      "nullable": true,
+      "type": "DateTime"
+    },
+    "dataEmissao": {
+      "key": true,
+      "nullable": true,
+      "type": "DateTime"
+    },
+    "dataVencimento": {
+      "key": true,
+      "nullable": true,
+      "type": "DateTime"
+    },
+    "descricao": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "emitidaProducao": {
+      "key": true,
+      "nullable": true,
+      "type": "Boolean"
+    },
+    "enviarEmail": {
+      "key": true,
+      "nullable": true,
+      "type": "Boolean"
+    },
+    "idIntegracao": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "lote": {
+      "key": true,
+      "nullable": true,
+      "type": "Double"
+    },
+    "mensagem": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "numero": {
+      "key": true,
+      "nullable": true,
+      "type": "Double"
+    },
+    "numeroNfse": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "prestadorCpfCnpj": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "prestadorRazaoSocial": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "serie": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "servicoCodigo": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "servicoDiscriminacao": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "servicoValorLiquido": {
+      "key": true,
+      "nullable": true,
+      "type": "Double"
+    },
+    "servicoValorServico": {
+      "key": true,
+      "nullable": true,
+      "type": "Double"
+    },
+    "status": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "statusCallback": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "tipoAutorizacao": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "tomadorCpfCnpj": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "tomadorEnderecoCodigoCidade": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "tomadorEnderecoDescricaoCidade": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "tomadorOrgaoPublico": {
+      "key": true,
+      "nullable": true,
+      "type": "Boolean"
+    },
+    "tomadorRazaoSocial": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    },
+    "uuid": {
+      "key": true,
+      "nullable": true,
+      "type": "String"
+    }
+  },
+  "security": {
+    "alteradoPor": null,
+    "cadastradoPor": null,
+    "cidadePrestacaoCodigo": null,
+    "cidadePrestacaoDescricao": null,
+    "codigoNota": null,
+    "codigoVerificacao": null,
+    "competencia": null,
+    "dataAlteracao": null,
+    "dataAutorizacao": null,
+    "dataCadastro": null,
+    "dataEmissao": null,
+    "dataVencimento": null,
+    "descricao": null,
+    "emitidaProducao": null,
+    "enviarEmail": null,
+    "idIntegracao": null,
+    "lote": null,
+    "mensagem": null,
+    "numero": null,
+    "numeroNfse": null,
+    "prestadorCpfCnpj": null,
+    "prestadorRazaoSocial": null,
+    "serie": null,
+    "servicoCodigo": null,
+    "servicoDiscriminacao": null,
+    "servicoValorLiquido": null,
+    "servicoValorServico": null,
+    "status": null,
+    "statusCallback": null,
+    "tipoAutorizacao": null,
+    "tomadorCpfCnpj": null,
+    "tomadorEnderecoCodigoCidade": null,
+    "tomadorEnderecoDescricaoCidade": null,
+    "tomadorOrgaoPublico": null,
+    "tomadorRazaoSocial": null,
+    "uuid": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {
+    "Accept": "\"application/json\"",
+    "Authorization": {
+      "type": "server",
+      "blocklyMethod": "ObterToken",
+      "blocklyClass": "blockly.LyceumXNfseBlocos",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.LyceumXNfseBlocos",
+        "sourcePath": "src/main/java/blockly/LyceumX-NFse-blocos.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "CancelarNFSE",
+            "hasReturn": "true",
+            "params": [
+              "idInteg"
+            ]
+          },
+          {
+            "name": "ConsultarNFSE",
+            "hasReturn": "true",
+            "params": [
+              "idInteg"
+            ]
+          },
+          {
+            "name": "EmitirNFSE",
+            "hasReturn": "true",
+            "params": [
+              "valor",
+              "idInteg"
+            ]
+          },
+          {
+            "name": "dados_NFSE_padrao",
+            "hasReturn": "true",
+            "params": [
+              "idInteg",
+              "valor"
+            ]
+          },
+          {
+            "name": "ObterToken",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": "results",
+      "blocklyPOSTMethod": "default",
+      "blocklyPUTMethod": "default",
+      "blocklyDELETEMethod": "default",
+      "blocklyFILTERMethod": "results",
+      "blocklyCOUNTMethod": "totalElements"
+    },
+    "Content-Type": "\"application/json\""
+  },
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query988796/",
+  "audit": false
+}
