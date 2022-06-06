@@ -8,7 +8,7 @@ import java.util.concurrent.Callable;
 
 @CronapiMetaData(type = "blockly")
 @CronappSecurity
-public class LyceumXDs {
+public class LycXDs {
 
 public static final int TIMEOUT = 300;
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="src/main/webapp/views/logged/home.view.html" resourceType="JAVA" ruleDescription="LyceumX" ruleName="LyceumX" ruleSynchronous="false" ruleTimeout="300" ruleType="I" soap="false">
-  <metadata scale="1" scrollx="1158.5" scrolly="142.0999999999991" target="s_PN:#g4V`(rsH7atX?+"/>
+  <metadata scale="1" scrollx="1353.5" scrolly="712.1" target="6-)8O#o`:?(oWV(GYCq_"/>
   <block asynccall="false" colour="#fca03b" id="6-)8O#o`:?(oWV(GYCq_" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1267" y="-667">
     <field customattributes="" name="NAME">ConsultarNFSE</field>
     <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
@@ -45,73 +45,6 @@
                 <field customattributes="" name="SELECT">true</field>
               </block>
             </value>
-            <next>
-              <block asynccall="false" colour="#aa2f00" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="?|vySwKTp{x8SHnRbYo@" multilayer="false" namespace="cronapi.database.Operations.update" origintype="procedures_sql_update_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20um%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Entidade%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.update%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_update_callnoreturn">
-                <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22field%22,%22type%22:%22update%22,%22rulesEntity%22:%5B%7B%22entity%22:%22NFSe%22,%22namespace%22:%22app.entity.NFSe%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%7B%22operator%22:%22equal%22,%22field%22:%22numeronfse%22,%22value%22:%22:numeronfse%22,%22type%22:%22integer%22%7D,%7B%22operator%22:%22equal%22,%22field%22:%22status%22,%22value%22:%22:status%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22id%22,%22field%22:%22id%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:id%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:false,%22paginatorAutomatic%22:false,%22pagination%22:false%7D,%22entity%22:%22NFSe%22,%22entityFullName%22:%22app.entity.NFSe%22,%22filter%22:%22update%20NFSe%20set%20numeronfse%20=%20:numeronfse,%20status%20=%20:status%20where%20id%20=%20:id%22,%22type%22:%22F%22,%22params%22:%22%5B%5C%22numeronfse%5C%22,%5C%22status%5C%22,%5C%22id%5C%22%5D%22%7D" name="{{cronapi.database.Operations.update}}">
-                  <arg name="numeronfse"/>
-                  <arg name="status"/>
-                  <arg name="id"/>
-                </mutation>
-                <value name="ARG0">
-                  <block asynccall="false" colour="#934848" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="tC]/zRFdx++0Y`vJ0eQ2" multilayer="false" namespace="cronapi.screen.Operations.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.JSON" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Json%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.Operations.getValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
-                    <mutation name="{{cronapi.screen.Operations.getValueOfField}}" return-raw-type="cronapi.Var">
-                      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Campo"/>
-                    </mutation>
-                    <value name="ARG0">
-                      <block asynccall="false" colour="#934848" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="ELdyVn$ZUR3GC?_utN+=" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
-                        <field customattributes="" name="SELECT">pluginNFse.active.numeroNfse</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="ARG1">
-                  <block asynccall="false" colour="#934848" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="$K=laEAS^l3fNnGtd^rm" multilayer="false" namespace="cronapi.screen.Operations.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.JSON" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Json%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.Operations.getValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
-                    <mutation name="{{cronapi.screen.Operations.getValueOfField}}" return-raw-type="cronapi.Var">
-                      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Campo"/>
-                    </mutation>
-                    <value name="ARG0">
-                      <block asynccall="false" colour="#934848" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="]9;W@i.-dX,sEc-C]qo5" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
-                        <field customattributes="" name="SELECT">pluginNFse.active.status</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="ARG2">
-                  <block asynccall="false" colour="#934848" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="mAut1S{7`Y$zu%x[sXt3" multilayer="false" namespace="cronapi.screen.Operations.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.JSON" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Json%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.Operations.getValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
-                    <mutation name="{{cronapi.screen.Operations.getValueOfField}}" return-raw-type="cronapi.Var">
-                      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Campo"/>
-                    </mutation>
-                    <value name="ARG0">
-                      <block asynccall="false" colour="#934848" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="4QaoKx|CVC7f`6qCB1Iu" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
-                        <field customattributes="" name="SELECT">pluginNFse.active.idIntegracao</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <next>
-                  <block asynccall="false" colour="#934848" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="(Drwv:Eyw0,@d/Jr6e/j" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.refreshDatasource%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
-                    <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
-                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
-                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
-                    </mutation>
-                    <value name="ARG0">
-                      <block asynccall="false" colour="#934848" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="0kgk#cbp$kOV}Ip`23sN" origintype="datasource_from_screen" output="true" type="datasource_from_screen">
-                        <field customattributes="" name="SELECT">NFSe</field>
-                      </block>
-                    </value>
-                    <value name="ARG1">
-                      <block asynccall="false" colour="#934848" dependencyby="6-)8O#o`:?(oWV(GYCq_" id="^ff:pH.?I,#%`3$wc7((" origintype="util_dropdown" output="true" type="util_dropdown">
-                        <mutation>
-                          <arg name="true" value="Verdadeiro"/>
-                          <arg name="false" value="Falso"/>
-                        </mutation>
-                        <field customattributes="" name="SELECT">true</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
-              </block>
-            </next>
           </block>
         </next>
       </block>

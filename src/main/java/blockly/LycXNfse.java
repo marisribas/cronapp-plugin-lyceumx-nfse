@@ -8,7 +8,7 @@ import java.util.concurrent.Callable;
 
 @CronapiMetaData(type = "blockly")
 @CronappSecurity
-public class LyceumXNfseblockly {
+public class LycXNfse {
 
 public static final int TIMEOUT = 300;
 
@@ -60,18 +60,6 @@ public static Var ConsultarNFSE() throws Exception {
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"),
     Var.valueOf("pluginNFse"),
     Var.valueOf("true"));
-
-    cronapi.database.Operations.execute(Var.valueOf("app.entity.NFSe"), Var.valueOf("update NFSe set numeronfse = :numeronfse, status = :status where id = :id"),Var.valueOf("numeronfse",
-    cronapi.screen.Operations.getValueOfField(
-    Var.valueOf("pluginNFse.active.numeroNfse"))),Var.valueOf("status",
-    cronapi.screen.Operations.getValueOfField(
-    Var.valueOf("pluginNFse.active.status"))),Var.valueOf("id",
-    cronapi.screen.Operations.getValueOfField(
-    Var.valueOf("pluginNFse.active.idIntegracao"))));
-
-    cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"),
-    Var.valueOf("NFSe"),
-    Var.valueOf("true"));
     return msg;
    }
  }.call();
@@ -110,10 +98,6 @@ public static Var EmitirNFSE() throws Exception {
         Var.valueOf("cronapp-").toString() +
         cronapi.util.Operations.generateUUID().toString());
 
-        cronapi.database.Operations.insert(Var.valueOf("app.entity.NFSe"),Var.valueOf("id",idIntegracao),Var.valueOf("valor",
-        cronapi.screen.Operations.getValueOfField(
-        Var.valueOf("vars.nfseValor"))));
-
         resp =
         Var.valueOf(cronapi.LyceumxNFse.EmitirNFSE(
         cronapi.screen.Operations.getValueOfField(
@@ -121,10 +105,6 @@ public static Var EmitirNFSE() throws Exception {
 
         cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.hideModal"),
         Var.valueOf("modal-emitirNF"));
-
-        cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"),
-        Var.valueOf("NFSe"),
-        Var.valueOf("true"));
 
         cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"),
         Var.valueOf("pluginNFse"),
