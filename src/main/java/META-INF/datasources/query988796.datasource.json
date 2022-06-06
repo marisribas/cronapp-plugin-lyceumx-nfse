@@ -334,46 +334,26 @@
     "Authorization": {
       "type": "server",
       "blocklyMethod": "ObterToken",
-      "blocklyClass": "blockly.LyceumXNfseBlocos",
+      "blocklyClass": "blockly.LyceumXDs",
       "blocklyLanguage": "java",
       "blocklyParams": [],
       "blocklyJson": {
-        "namespace": "blockly.LyceumXNfseBlocos",
-        "sourcePath": "src/main/java/blockly/LyceumX-NFse-blocos.blockly",
+        "namespace": "blockly.LyceumXDs",
+        "sourcePath": "src/main/java/blockly/LyceumX-ds.blockly",
         "language": "java",
         "methods": [
           {
-            "name": "CancelarNFSE",
-            "hasReturn": "true",
-            "params": [
-              "idInteg"
-            ]
-          },
-          {
-            "name": "ConsultarNFSE",
-            "hasReturn": "true",
-            "params": [
-              "idInteg"
-            ]
-          },
-          {
-            "name": "EmitirNFSE",
-            "hasReturn": "true",
-            "params": [
-              "valor",
-              "idInteg"
-            ]
-          },
-          {
-            "name": "dados_NFSE_padrao",
-            "hasReturn": "true",
-            "params": [
-              "idInteg",
-              "valor"
-            ]
-          },
-          {
             "name": "ObterToken",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "filterx",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "orderx",
             "hasReturn": "true",
             "params": []
           }
