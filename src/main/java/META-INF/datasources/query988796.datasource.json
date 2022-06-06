@@ -14,8 +14,8 @@
         "$datapath": "\"results\"",
         "size": "per_page",
         "page": "expression:${page?number-1}",
-        "sort": "cronapi.server(\u0027blockly.LyceumXDs.orderx\u0027).names().run()",
-        "filter": "cronapi.server(\u0027blockly.LyceumXDs.filterx\u0027).names().run()"
+        "sort": "cronapi.server(\u0027blockly.LycXDs.orderx\u0027).names().run()",
+        "filter": "cronapi.server(\u0027blockly.LycXDs.filterx\u0027).names().run()"
       }
     },
     "POST": {},
@@ -27,8 +27,8 @@
         "$datapath": "\"results\"",
         "size": "per_page",
         "page": "expression:${page?number-1}",
-        "filter": "cronapi.server(\u0027blockly.LyceumXDs.filterx\u0027).names().run()",
-        "sort": "cronapi.server(\u0027blockly.LyceumXDs.orderx\u0027).names().run()"
+        "filter": "cronapi.server(\u0027blockly.LycXDs.filterx\u0027).names().run()",
+        "sort": "cronapi.server(\u0027blockly.LycXDs.orderx\u0027).names().run()"
       }
     },
     "COUNT": {
@@ -334,12 +334,12 @@
     "Authorization": {
       "type": "server",
       "blocklyMethod": "ObterToken",
-      "blocklyClass": "blockly.LyceumXDs",
+      "blocklyClass": "blockly.LycXDs",
       "blocklyLanguage": "java",
       "blocklyParams": [],
       "blocklyJson": {
-        "namespace": "blockly.LyceumXDs",
-        "sourcePath": "src/main/java/blockly/LyceumX-ds.blockly",
+        "namespace": "blockly.LycXDs",
+        "sourcePath": "src/main/java/blockly/LycX-ds.blockly",
         "language": "java",
         "methods": [
           {
