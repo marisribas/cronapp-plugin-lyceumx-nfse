@@ -20,17 +20,9 @@ public static final int TIMEOUT = 300;
 public static Var ObterToken() throws Exception {
  return new Callable<Var>() {
 
-   private Var token = Var.VAR_NULL;
-
    public Var call() throws Exception {
-
-    token =
-    cronapi.screen.Operations.getTokenClaim(
-    Var.valueOf("SSOAccessToken"));
     return
-Var.valueOf(
-Var.valueOf("Bearer ").toString() +
-token.toString());
+Var.valueOf(cronapi.LyceumxNFse.ObterToken());
    }
  }.call();
 }

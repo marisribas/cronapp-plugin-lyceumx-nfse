@@ -89,9 +89,7 @@ public static Var CancelarNFSE(@ParamMetaData(description = "idInteg") Var idInt
     Var.valueOf("Cancelamento de serviço Cronapp"))),
     Var.valueOf(""),
     Var.valueOf("BODY"));
-    return
-cronapi.map.Operations.createObjectMapWith(Var.valueOf("msg",
-Var.valueOf("NF cancelada com sucesso")));
+    return resp;
    }
  }.call();
 }
@@ -130,9 +128,7 @@ public static Var ConsultarNFSE(@ParamMetaData(description = "idInteg") Var idIn
     Var.valueOf("contaId"))) , Var.valueOf("Authorization",token)), Var.VAR_NULL,
     Var.valueOf(""),
     Var.valueOf("BODY"));
-    return
-cronapi.map.Operations.createObjectMapWith(Var.valueOf("msg",
-Var.valueOf("NF consultada com sucesso")));
+    return resp; 
    }
  }.call();
 }
@@ -165,9 +161,7 @@ public static Var EmitirNFSE(@ParamMetaData(description = "valor") Var valor, @P
     Var.valueOf(dados_NFSE_padrao(idInteg, valor)),
     Var.valueOf(""),
     Var.valueOf("BODY"));
-    return
-cronapi.map.Operations.createObjectMapWith(Var.valueOf("msg",
-Var.valueOf("NF emitida com sucesso")));
+    return resp;
    }
  }.call();
 }
