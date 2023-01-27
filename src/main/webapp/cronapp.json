@@ -1,0 +1,3 @@
+{
+  "cronapp.framework.web.mainroute": "views/login.view.html"
+}
